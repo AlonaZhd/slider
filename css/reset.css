@@ -55,10 +55,3 @@ input:focus-visible {
 .main {
     flex: 1 1 auto;
 }
-
-[class*="-container"] {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0;
-/*    border: 1px solid var(--darkgreen);*/
-}

@@ -1,17 +1,117 @@
 * {
     --nero: #101418;
     --white: #FFFFFF;
-}
-
-.body-wrapper {
-    background: var(--white);
-    padding: 0 2rem;
-}
-
-.title {
-    font-size: 4.5rem;
+    --bg: #021528;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ========= main ========= */
 
+.main {
+    width: 100%;
+    margin: 5rem auto;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
 
+.main::after {
+    content: '';
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bg);
+    margin-top: 5rem;
+}
+
+/* ========= slider ========= */
+
+.slider {
+    min-width: 0;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.slider__item {
+    display: flex;
+    gap: 2rem;
+}
+
+.slider__item__image {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.slider__item__text {
+    font-size: 1.4rem;
+    line-height: 150%;
+    min-width: 150px;
+}
+
+/* ====================== */
+
+.slick-slider.slick-dotted {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.slick-list  {
+    overflow: hidden;
+    margin: 0 30px;
+    padding: 20px 0;
+}
+
+.slick-track {
+    display: flex;
+    gap: 20px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: calc(50% + 30px);
+    width: 25px;
+    height: 25px;
+    background-color: var(--bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+.slick-arrow.slick-prev {
+    left: 0;
+    background-image: url(/img/arrow-left.svg);
+
+}
+
+.slick-arrow.slick-next {
+    right: 0;
+    background-image: url(/img/arrow-right.svg);
+}
+
+.slick-dots {
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 2rem 0;
+    z-index: 2;
+}
+
+.slick-dots li.slick-active button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffd900;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--white);
+}

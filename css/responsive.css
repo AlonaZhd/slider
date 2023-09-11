@@ -6,12 +6,47 @@
 
 /* Medium(Tablet): 701px - 1024px */
 @media (max-width: 1024px) {
+    .slick-dots {
+        gap: 15px;
+    }
+    .slick-dots li.slick-active button{
+        width: 14px;
+        height: 14px;
+    }
+    /* Элемент точки */
+    .slick-dots li button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+    }
 }
 
 /* Small(Mobile): 576px - 760px */
 @media (max-width: 760px) {
+    .slider__item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .slick-dots {
+        gap: 10px;
+    }
+    .slick-dots li.slick-active button{
+        width: 14px;
+        height: 14px;
+    }
+    /* Элемент точки */
+    .slick-dots li button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+    }
 }
 
 /* Extra small(Mobile): 0px (320px) - 575px */
 @media (max-width: 575px) {
+    .slick-dots {
+        gap: 8px;
+    }
 }
