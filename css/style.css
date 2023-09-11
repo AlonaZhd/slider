@@ -1,0 +1,17 @@
+* {
+    --nero: #101418;
+    --white: #FFFFFF;
+}
+
+.body-wrapper {
+    background: var(--white);
+    padding: 0 2rem;
+}
+
+.title {
+    font-size: 4.5rem;
+}
+
+/* ========= main ========= */
+
+
